@@ -1,6 +1,8 @@
 #!/bin/bash
 set -ev
 
+echo "Backend feed service"
+
 if [ "$BUILD_ENV" == "production" ]; then
   echo "Building production image: dzarate/udacity-c3-restapi-feed:latest"
   docker build -t dzarate/udacity-c3-restapi-feed:latest .
